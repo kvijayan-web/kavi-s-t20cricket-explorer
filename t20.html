@@ -1,0 +1,211 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAVI's T20 Explorer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(90deg, #000000, #2c2c2c);
+  border-bottom: 3px solid gold;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3.2em;
+  color: gold;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-top: 12px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.search-box input[type="text"] {
+  width: 60%;
+  max-width: 600px;
+  padding: 12px 15px;
+  border: 2px solid gold;
+  border-right: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+  box-shadow: 0 0 15px gold;
+}
+
+.search-box button {
+  padding: 12px 25px;
+  border: 2px solid gold;
+  background-color: gold;
+  color: #000;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #d4af37;
+}
+
+.year-section {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  padding: 70px 0 100px;
+  box-shadow: inset 0 0 50px rgba(255, 215, 0, 0.05);
+}
+
+.year-section h2 {
+  text-align: center;
+  color: gold;
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+.year-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.year-buttons a {
+  text-decoration: none;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border: 3px solid gold;
+  color: gold;
+  padding: 20px 45px;
+  border-radius: 60px;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.year-buttons a:hover {
+  background: gold;
+  color: #000;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+  transform: translateY(-8px) scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #000;
+  border-top: 1px solid gold;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+footer span {
+  color: gold;
+  font-weight: 600;
+}
+
+footer p.quote {
+  font-style: italic;
+  color: #999;
+  margin-top: 8px;
+  font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+  .search-box input[type="text"] {
+    width: 75%;
+  }
+  .year-buttons a {
+    font-size: 1.1em;
+    padding: 15px 30px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>KAVI’s T20 Explorer</h1>
+  <p>Your Ultimate Hub for Every T20 World Cup Match Summary</p>
+</header>
+
+<section class="year-section">
+  <h2>Select a T20 World Cup Year</h2>
+  <div class="year-buttons">
+    <a href="t20_2007.html">2007</a>
+    <a href="t20_2009.html">2009</a>
+    <a href="t20_2010.html">2010</a>
+    <a href="t20_2012.html">2012</a>
+    <a href="t20_2014.html">2014</a>
+    <a href="t20_2016.html">2016</a>
+    <a href="t20_2021.html">2021</a>
+    <a href="t20_2022.html">2022</a>
+    <a href="t20_2024.html">2024</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>KAVI’s T20 Explorer</span> — All Rights Reserved.</p>
+  <p class="quote">"T20 isn’t just a game; it’s 20 overs of heartbeats, hope, and heroics."</p>
+</footer>
+
+<script>
+function searchFiles() {
+  const query = document.getElementById("searchInput").value.toLowerCase().trim();
+  if (!query) {
+    alert("Please enter a search term!");
+    return;
+  }
+
+  const files = [
+    "t20_2007.html","t20_2007_part1.html","t20_2007_part2.html","t20_2007_part3.html",
+    "t20_2009.html","t20_2009_part1.html","t20_2009_part2.html","t20_2009_part3.html",
+    "t20_2010.html","t20_2010_part1.html","t20_2010_part2.html","t20_2010_part3.html",
+    "t20_2012.html","t20_2012_part1.html","t20_2012_part2.html","t20_2012_part3.html",
+    "t20_2014.html","t20_2014_part1.html","t20_2014_part2.html","t20_2014_part3.html",
+    "t20_2016.html","t20_2016_part1.html","t20_2016_part2.html","t20_2016_part3.html",
+    "t20_2021.html","t20_2021_part1.html","t20_2021_part2.html","t20_2021_part3.html",
+    "t20_2022.html","t20_2022_part1.html","t20_2022_part2.html","t20_2022_part3.html",
+    "t20_2024.html","t20_2024_part1.html","t20_2024_part2.html","t20_2024_part3.html"
+  ];
+
+
+
+</body>
+</html>

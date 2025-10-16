@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICC T20 World Cup 2007 - VK's Explorer</title>
+  <style> body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Subtle background text overlay */
+  body::before {
+    content: "T20 World Cup";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    font-weight: 900;
+    z-index: 0;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  header {
+    padding: 25px;
+    font-size: 2.5em;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(255,215,0,0.8), rgba(255,140,0,0.8));
+    color: #000;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .match {
+    width: 60%;
+    padding: 18px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffdd57, #ffc107);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    border: 2px solid #ffd700;
+  }
+
+  .match:hover {
+    transform: scale(1.08);
+    background: linear-gradient(145deg, #ffe066, #ffb700);
+    box-shadow: 0 8px 25px rgba(255,215,0,0.6);
+  }
+
+  .back {
+    margin-top: 50px;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #00ffcc, #00cc99);
+    color: #000;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid #00ffaa;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  }
+
+  .back:hover {
+    background: linear-gradient(135deg, #00ffaa, #00eeaa);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,255,204,0.5);
+  }
+
+  /* Quote at bottom */
+  body::after {
+    content: "🏏 'T20 is not just a game, it's 20 overs of dreams, drama, and destiny!' 🏆";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+    text-align: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .match {
+      width: 80%;
+      padding: 15px;
+      font-size: 1em;
+    }
+    .back {
+      width: 70%;
+      font-size: 0.95em;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <header>🏏 ICC T20 World Cup 2009 🏆</header>
+
+  <div class="container">
+    <div class="match" onclick="location.href='t20_2009_part1.html'"> GROUP STAGE MATCHES </div>
+     <div class="match" onclick="location.href='t20_2009_part2.html'">SUPER 8</div>
+      <div class="match" onclick="location.href='t20_2009_part3.html'"> SEMI- FINAL and FINAL  </div>
+<!-- and so on -->
+
+    <!-- Continue for all 27 matches -->
+  </div>
+
+  <button class="back" onclick="location.href='t20.html'">⬅ Back to T20 Years</button>
+
+</body>
+</html>

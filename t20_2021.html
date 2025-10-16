@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICC T20 World Cup 2007 - VK's Explorer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #283048, #859398);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .match {
+      width: 60%;
+      padding: 15px;
+      border-radius: 10px;
+      background: #ffcc00;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .match:hover {
+      transform: scale(1.05);
+      background: #ffe066;
+    }
+    .back {
+      margin-top: 40px;
+      padding: 10px 25px;
+      background: #00cc99;
+      color: black;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      border: none;
+    }
+    .back:hover {
+      background: #00ffaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🏏 ICC T20 World Cup 2021 🏆</header>
+
+  <div class="container">
+    <div class="match" onclick="location.href='t20_2021_part1.html'"> GROUP STAGE MATCHES </div>
+     <div class="match" onclick="location.href='t20_2021_part2.html'">SUPER 8</div>
+      <div class="match" onclick="location.href='t20_2021_part3.html'"> SEMI- FINAL and FINAL  </div>
+<!-- and so on -->
+
+    <!-- Continue for all 27 matches -->
+  </div>
+
+  <button class="back" onclick="location.href='t20.html'">⬅ Back to T20 Years</button>
+
+</body>
+</html>
